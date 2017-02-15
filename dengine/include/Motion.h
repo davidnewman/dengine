@@ -1,7 +1,7 @@
 #ifndef _DENGINE_MOTION_INCL
 #define _DENGINE_MOTION_INCL
 
-#include "Math.h"
+#include "DMath.h"
 
 namespace dengine {
     /**
