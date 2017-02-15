@@ -7,8 +7,9 @@ way of C++ development. It is purely being built as a learning exercise. Anyone 
  
 # Build
 
-Builds are generated using cmake. The only target OS that will be tested against will be Ubuntu 16.04. The steps to
-build the engine and examples are as follows.
+The build system generated using cmake.
+
+## Linux
 
 First, make sure you have the following installed:
 
@@ -16,6 +17,12 @@ First, make sure you have the following installed:
 - [SDL_Image](https://www.libsdl.org/projects/SDL_image/)
 - CMake >= 3.5
 - gcc / clang compiler
+
+For example on Ubunut 16.04:
+
+```commandline
+sudo apt-get install build-essential libsdl2-dev libsdl2-image-dev
+```
 
 Next, generate a make file:
 
@@ -34,5 +41,42 @@ make
 You should now be able to run one of the example applications:
 
 ```commandline
-./examples/asteroids
+cd examples/asteroids
+./asteroids
+```
+
+## Mac OS (10.12, but probably works on earlier versions)
+
+First, make sure you have the following installed:
+
+- [Simple DirectMedia Layer 2](http://libsdl.org/)
+- [SDL_Image](https://www.libsdl.org/projects/SDL_image/)
+- CMake >= 3.5
+- XCode
+
+For example on macOS 10.12 with Homebrew:
+
+```commandline
+brew install cmake sdl2 sdl2_image
+```
+
+Next, generate a make file:
+
+```commandline
+mkdir -p build
+cd build
+cmake ../
+```
+
+Next, run the makefile generated for you system:
+
+```commandline
+make
+```
+
+You should now be able to run one of the example applications:
+
+```commandline
+cd examples/asteroids
+./asteroids
 ```
