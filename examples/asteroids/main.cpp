@@ -80,10 +80,10 @@ void run() {
     Renderer rend(w->id(), -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
     Scene scene;
-    scene.shipTexture = rend.texture("/home/den/github/dengine/examples/asteroids/assets/ship.png");
-    scene.asteroidTexture = rend.texture("/home/den/github/dengine/examples/asteroids/assets/asteroid-large-1.png");
-    scene.asteroid2Texture = rend.texture("/home/den/github/dengine/examples/asteroids/assets/asteroid-large-2.png");
-    scene.bulletTexture = rend.texture("/home/den/github/dengine/examples/asteroids/assets/bullet.png");
+    scene.shipTexture = rend.texture("assets/ship.png");
+    scene.asteroidTexture = rend.texture("assets/asteroid-large-1.png");
+    scene.asteroid2Texture = rend.texture("assets/asteroid-large-2.png");
+    scene.bulletTexture = rend.texture("assets/bullet.png");
     scene.ship.sprite = std::make_shared<Sprite>(scene.shipTexture, 1, 32, 32, 1.0);
     scene.ship.motion = Motion(Vector2d(max_x / 2, max_y / 2));
     scene.heading = start_heading;

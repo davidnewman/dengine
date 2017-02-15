@@ -6,7 +6,7 @@
 #include "Window.h"
 #include "Surface.h"
 #include "Renderer.h"
-#include "Math.h"
+#include "DMath.h"
 #include "Motion.h"
 #include "Sprite.h"
 
