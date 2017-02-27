@@ -12,4 +12,6 @@ pkg_search_module(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
 include_directories (${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS})
 
 add_subdirectory(dengine)
+add_subdirectory(libzip)
+add_subdirectory(json11)
 add_subdirectory(examples/asteroids)

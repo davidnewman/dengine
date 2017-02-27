@@ -17,6 +17,8 @@ First, make sure you have the following installed:
 - [SDL_Image](https://www.libsdl.org/projects/SDL_image/)
 - CMake >= 3.5
 - gcc / clang compiler
+- libzip and header (e.g. `apt-get install libzip libzip-dev`)
+- zlib and headers (e.g. `apt-get install zlib zlib-dev`)
 
 For example on Ubunut 16.04:
 
