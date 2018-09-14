@@ -4,6 +4,7 @@ project(dengine)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake")
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 
 include(FindPkgConfig)
 pkg_search_module(SDL2 REQUIRED sdl2)
