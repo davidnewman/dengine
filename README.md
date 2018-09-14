@@ -4,7 +4,16 @@ dengine is intended to be a simple 2D, sprite/tile based game engine.
 It is being created by a person that knows nothing about video game creation, video game design, or even much in the 
 way of C++ development. It is purely being built as a learning exercise. Anyone that's looking for a real engine should
  probably take a look at something like Unity.
- 
+
+*NOTE:* You need grab any submodules (e.g. json11) after cloning the repo.
+
+```
+git clone https://github.com/davidnewman/dengine.git
+cd dengine
+git submodule init
+git submodule update
+```
+
 # Build
 
 The build system generated using cmake.
@@ -23,7 +32,7 @@ First, make sure you have the following installed:
 For example on Ubunut 16.04:
 
 ```commandline
-sudo apt-get install build-essential libsdl2-dev libsdl2-image-dev
+sudo apt-get install build-essential libsdl2-dev libsdl2-image-dev libizip libzip-dev zlib zlib-dev
 ```
 
 Next, generate a make file:
@@ -59,7 +68,7 @@ First, make sure you have the following installed:
 For example on macOS 10.12 with Homebrew:
 
 ```commandline
-brew install cmake sdl2 sdl2_image
+brew install cmake sdl2 sdl2_image libzip
 ```
 
 Next, generate a make file:
